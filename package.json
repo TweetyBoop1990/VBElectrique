@@ -1,14 +1,12 @@
 {
-  "homepage": "https://tweetyboop1990.github.io/vbelectriquesnextjs",
+  "homepage": "https://tweetyboop1990.github.io/vbelectrique",
   "private": true,
   "scripts": {
-    "replaceFilePaths": "node replacer.js",
-    "dev": "next dev",
-    "build": "next build && next export -o build && npm run replaceFilePaths",
+    "dev": "next",
+    "build": "next build",
     "start": "next start",
-    "export": "next export -o build && npm run replaceFilePaths",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "export": "next export",
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "next": "latest",
