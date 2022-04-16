@@ -1,8 +1,8 @@
 import { slide as Menu } from 'react-burger-menu';
 
-function Header() {
+function BurgerMenu() {
     return (
-        <Menu>
+        <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } >
             <a id="home" className="menu-item" href="/">Home</a>
             <a id="services" className="menu-item" href="/services">Services</a>
             <a id="about" className="menu-item" href="/about">About</a>
@@ -11,4 +11,4 @@ function Header() {
     );
 }
 
-export default Header
+export default BurgerMenu

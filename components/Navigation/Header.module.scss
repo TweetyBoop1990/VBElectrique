@@ -1,0 +1,11 @@
+@import '../Layout.module.scss';
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: $colour1;
+    color: $colour2;
+    position:fixed;
+    top:0;
+    z-index: 999;
+}

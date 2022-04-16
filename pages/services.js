@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <Layout>
       <div>
-        <p>This is the services page</p>
+        <h1>This is the services page</h1>
       </div>
     </Layout>
   )

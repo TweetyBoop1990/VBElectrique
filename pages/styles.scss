@@ -1,0 +1,58 @@
+@import '/components/Layout.module.scss';
+
+.mainContent {
+	margin-top: 100px;
+}
+
+.index-page {
+	height: 100px;
+}
+
+body {
+	height: 50%;
+}
+
+/* Styling of Burger Menu */
+.bm-burger-button {
+	position: fixed;
+	width: 36px;
+	height: 30px;
+	left: 36px;
+	top: 36px;
+}
+.bm-burger-bars {
+	background: #373a47;
+}
+.bm-burger-bars-hover {
+	background: #a90000;
+}
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+}
+.bm-cross {
+	background: #bdc3c7;
+}
+.bm-menu-wrap {
+	position: fixed;
+	height: 100%;
+	margin-top: -100px;
+}
+.bm-menu {
+	background: #16181f;
+	padding: 2.5em 1.5em 0;
+	font-size: 1.15em;
+}
+.bm-morph-shape {
+	fill: #16181f;
+}
+.bm-item-list {
+	color: #b8b7ad;
+	padding: 0.8em;
+}
+.bm-item {
+	display: inline-block;
+}
+.bm-overlay {
+	background: rgba(0, 0, 0, 0.3);
+}

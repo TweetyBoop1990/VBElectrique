@@ -1,0 +1,12 @@
+.ui.form {
+	.field.field {
+		input {
+			&:-webkit-autofill {
+				background-color: #ffc28a !important;
+				&:focus {
+					background-color: #ffc28a !important;
+				}
+			}
+		}
+	}
+}
