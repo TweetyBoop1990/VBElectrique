@@ -1,0 +1,14 @@
+{
+    "HOME" : {
+      "TITLE": "Accueil"
+    },
+    "ABOUT": {
+      "TITLE": "À Propos"
+    },
+    "SERVICES": {
+      "TITLE": "Services"
+    },
+    "CONTACTUS": {
+      "TITLE": "Contactez-Nous"
+    }
+  }
