@@ -11,9 +11,9 @@ export default function Header() {
                 <div className="ui column">
                     <Logo />
                 </div>
-                <div className="ui column">
+                <div className="ui column right aligned">
                     <div className="ui centered">
-                        <a className="ui labeled icon button" href="tel:5555555555">
+                        <a className={`ui labeled icon button ${styles.phoneButton}`} href="tel:5555555555">
                             <i className="phone icon"></i> 555-555-5555
                         </a>
                     </div>
