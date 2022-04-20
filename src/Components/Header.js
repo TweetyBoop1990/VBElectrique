@@ -2,12 +2,12 @@ import React from "react";
 import Fade from "react-reveal";
 import ReactPlayer from 'react-player';
 import heroVideo from './istockphoto-1266078247-640_adpp_is.mp4';
-import { useTranslation } from 'react-i18next';
 import LangSelector from './LanguageSwitcher/LangSelector';
+import { useTranslation } from "react-i18next";
+import { i18n } from '../translations/i18n';
 
-const Header = (props) => {
+function Header(props) {
   const { t } = useTranslation();
-
   if (!props.data) return null;
 
   const project = props.data.project;
@@ -42,19 +42,19 @@ const Header = (props) => {
         <ul id="nav" className="nav">
           <li className="current">
             <a className="smoothscroll" href="#home">
-              {t('HOME.TITLE')}
+              { t("hometitle") }
             </a>
           </li>
 
           <li>
             <a className="smoothscroll" href="#about">
-              {t('ABOUT.TITLE')}
+              { t("abouttitle") }
             </a>
           </li>
 
           <li>
             <a className="smoothscroll" href="#resume">
-              {t('SERVICES.TITLE')}
+              { t("servicestitle") }
             </a>
           </li>
 

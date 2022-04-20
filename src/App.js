@@ -9,7 +9,6 @@ import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
 import { CookiesProvider } from 'react-cookie';
-import './i18n/i18n';
 
 class App extends Component {
   constructor(props) {
