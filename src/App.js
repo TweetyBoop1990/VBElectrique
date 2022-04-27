@@ -8,14 +8,24 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
-import { CookiesProvider } from 'react-cookie';
+import { instanceOf } from 'prop-types';
+import { withCookies, Cookies, CookiesProvider } from 'react-cookie';
 
 class App extends Component {
+  static propTypes = {
+    cookies: instanceOf(Cookies).isRequired
+  };
+
   constructor(props) {
     super(props);
+    const { cookies } = props;
     this.state = {
       foo: "bar",
-      resumeData: {}
+      resumeData: {
+        en: {},
+        fr: {}
+      },
+      siteLang: cookies.get('siteLang') || navigator.language
     };
 
     ReactGA.initialize("UA-110570651-1");
@@ -59,4 +69,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withCookies(App);

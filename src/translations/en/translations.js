@@ -1,7 +1,9 @@
 export const TRANSLATIONS_EN = {
-    welcome:"Welcome to the tutorial",
     hometitle: "Home",
     abouttitle: "About",
     servicestitle: "Services",
-    contactustitle: "Contact"
+    contactustitle: "Contact",
+    name: "VB Electrique",
+    description: "Trust the electrical contractor VB Électrique for all your electrical installation and connection needs.",
+    ctaButtonHeader: "Get A Quote"
    };

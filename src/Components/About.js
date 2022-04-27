@@ -49,11 +49,7 @@ class About extends Component {
                   </p>
                 </div>
                 <div className="columns download">
-                  <p>
-                    <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
-                    </a>
-                  </p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.6151220049896!2d-73.86941174913434!3d45.678626279001634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8d7d71aa26b5f%3A0xef0e85535a27fa50!2s6%20Pl.%20d&#39;Argenson%2C%20Blainville%2C%20QC%20J7C%204H2!5e0!3m2!1sen!2sca!4v1650744127219!5m2!1sen!2sca" width="600" height="450" title="vbelectrique Address" style={{border:0,maxWidth: '-webkit-fill-available'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
             </div>
