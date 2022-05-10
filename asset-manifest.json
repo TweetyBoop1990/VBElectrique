@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/vbelectrique/static/css/main.31d6cfe0.css",
+    "main.js": "/vbelectrique/static/js/main.c373a588.js",
+    "static/js/787.af2f543d.chunk.js": "/vbelectrique/static/js/787.af2f543d.chunk.js",
+    "static/media/AdobeStock1.mov": "/vbelectrique/static/media/AdobeStock1.b36f1c603229cc72ef86.mov",
+    "static/media/TransparentLogoLight.svg": "/vbelectrique/static/media/TransparentLogoLight.27f60808cac31b5c3b104cce640be928.svg",
+    "index.html": "/vbelectrique/index.html",
+    "main.c373a588.js.map": "/vbelectrique/static/js/main.c373a588.js.map",
+    "787.af2f543d.chunk.js.map": "/vbelectrique/static/js/787.af2f543d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.c373a588.js"
+  ]
+}
