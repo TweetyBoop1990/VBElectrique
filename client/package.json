@@ -2,7 +2,7 @@
   "name": "vbelectrique",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://TweetyBoop1990.github.io/vbelectrique",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@emotion/styled": "^11.8.1",
@@ -35,6 +35,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -59,6 +61,8 @@
     ]
   },
   "devDependencies": {
-    "chokidar": "^3.5.1"
+    "chokidar": "^3.5.1",
+    "gh-pages": "^3.2.3",
+    "netlify-cli": "^10.3.0"
   }
 }

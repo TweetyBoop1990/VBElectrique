@@ -46,11 +46,11 @@ function Header(props) {
             </a>
           </li>
 
-          <li>
+          {/* <li>
             <a className="smoothscroll" href="#about">
               {t("abouttitle")}
             </a>
-          </li>
+          </li> */}
 
           <li>
             <a className="smoothscroll" href="#resume">
