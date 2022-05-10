@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 import i18n from '../translations/i18n'
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMobileRetro, faEnvelope, faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const ContactForm = () => {
     const { t } = useTranslation();
@@ -90,7 +90,7 @@ const ContactForm = () => {
                         <div className="preferenceDivWrapper">
                             <div className="preferenceDiv">
                                 <label htmlFor="phonePreference" className={`button preference ${contactPreference === "phone" ? "active" : ""}`}>
-                                    <FontAwesomeIcon icon={faMobileRetro} /> {t("contactPhone")}
+                                    <FontAwesomeIcon icon={faPhone} /> {t("contactPhone")}
                                 </label>
                                 <input
                                     type="radio"
@@ -100,7 +100,7 @@ const ContactForm = () => {
                                     onClick={e => setPreference('phone')}
                                     hidden
                                 />
-                                <label htmlFor="emailPreference" className={`button preference ${contactPreference === "email" ? "active" : ""}`}>
+                                <label htmlFor="emailPreference" id="emailPreferenceLabel" className={`button preference ${contactPreference === "email" ? "active" : ""}`}>
                                     <FontAwesomeIcon icon={faEnvelope} /> {t("contactEmail")}
                                 </label>
                                 <input

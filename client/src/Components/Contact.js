@@ -32,7 +32,7 @@ class Contact extends Component {
 
         <div className="row">
           <Slide left duration={1000}>
-            <div className="eight columns">
+            <div className="six columns">
               
               <ContactForm />
 
@@ -45,7 +45,7 @@ class Contact extends Component {
           </Slide>
 
           <Slide right duration={1000}>
-            <aside className="four columns footer-widgets">
+            <aside className="six columns footer-widgets">
               <div className="widget widget_contact">
                 <h4>Address and Phone</h4>
                 <p className="address">
@@ -59,7 +59,8 @@ class Contact extends Component {
               </div>
 
               <div className="widget widget_tweets">
-                <h4 className="widget-title">Latest Tweets</h4>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.6151220049896!2d-73.86941174913434!3d45.678626279001634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8d7d71aa26b5f%3A0xef0e85535a27fa50!2s6%20Pl.%20d&#39;Argenson%2C%20Blainville%2C%20QC%20J7C%204H2!5e0!3m2!1sen!2sca!4v1650744127219!5m2!1sen!2sca" width="600" height="450" title="vbelectrique Address" style={{border:0,maxWidth: '-webkit-fill-available'}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                {/* <h4 className="widget-title">Latest Tweets</h4>
                 <ul id="twitter">
                   <li>
                     <span>
@@ -84,7 +85,7 @@ class Contact extends Component {
                       <a href="./">3 Days Ago</a>
                     </b>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </aside>
           </Slide>

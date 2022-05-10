@@ -5,6 +5,7 @@ export const TRANSLATIONS_EN = {
     contactustitle: "Contact",
     name: "VB Electrique",
     description: "Trust the electrical contractor VB Électrique for all your electrical installation and connection needs.",
+    mainregions: "Main regions of service: Laurentians, Lanaudiere and Laval",
     ctaButtonHeader: "Get A Quote",
     contactName: "Name",
     contactPhone: "Phone",

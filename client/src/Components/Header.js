@@ -1,12 +1,12 @@
 import React from "react";
 import Fade from "react-reveal";
 import ReactPlayer from 'react-player';
-import heroVideo from './istockphoto-1266078247-640_adpp_is.mp4';
+import heroVideo from './AdobeStock1.mov';
 import LangSelector from './LanguageSwitcher/LangSelector';
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReceipt } from "@fortawesome/free-solid-svg-icons";
-import logo from './TransparentLogo.svg';
+import logo from './TransparentLogoLight.svg';
 
 function Header(props) {
   const { t } = useTranslation();
@@ -73,10 +73,11 @@ function Header(props) {
         <div className="banner-text">
           <Fade bottom>
             <h1 className="responsive-headline" style={{display: 'none'}}>{t("name")}</h1>
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" style={{marginTop: '-45px'}}/>
           </Fade>
           <Fade bottom duration={1200}>
-            <h3>{t("description")}.</h3>
+            <h3 style={{marginTop: '-80px'}}>{t("description")}</h3>
+            <h3>{t("mainregions")}</h3>
           </Fade>
           <hr />
           <Fade bottom duration={2000}>
