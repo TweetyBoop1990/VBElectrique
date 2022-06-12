@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/vbelectrique/static/css/main.31d6cfe0.css",
-    "main.js": "/vbelectrique/static/js/main.e87ef230.js",
-    "static/js/787.af2f543d.chunk.js": "/vbelectrique/static/js/787.af2f543d.chunk.js",
+    "main.js": "/vbelectrique/static/js/main.c140a544.js",
+    "static/js/787.46af0ed8.chunk.js": "/vbelectrique/static/js/787.46af0ed8.chunk.js",
     "index.html": "/vbelectrique/index.html",
-    "main.e87ef230.js.map": "/vbelectrique/static/js/main.e87ef230.js.map",
-    "787.af2f543d.chunk.js.map": "/vbelectrique/static/js/787.af2f543d.chunk.js.map"
+    "main.c140a544.js.map": "/vbelectrique/static/js/main.c140a544.js.map",
+    "787.46af0ed8.chunk.js.map": "/vbelectrique/static/js/787.46af0ed8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.e87ef230.js"
+    "static/js/main.c140a544.js"
   ]
 }
