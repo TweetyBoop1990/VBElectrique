@@ -37,7 +37,7 @@ const ContactForm = () => {
 
     return (
         <div>
-            <form ref={form} method="post" id="contactForm" name="contactForm" onSubmit={submitRequest}>
+            <form ref={form} method="post" id="contactForm" name="contactForm" onSubmit={submitRequest} netlify>
                 <fieldset>
                     <div className="six columns">
                         <div>
