@@ -9,7 +9,7 @@ export const TRANSLATIONS_FR = {
     ctaButtonHeader: "Obtenir une estimation",
     contactName: "Nom",
     contactPhone: "Téléphone",
-    contactPhoneNumber: "Numéro téléphone",
+    contactPhoneNumber: "Téléphone",
     contactEmail: "Courriel",
     contactPreference: "Préférence",
     contactCity: "Ville",

@@ -95,7 +95,7 @@ header .social li a:hover { color: #0762f9; }
 /* scrolldown link */
 header .scrolldown a {
    position: absolute;
-   bottom: 30px;
+   bottom: 25px;
    left: 50%;
    margin-left: -29px;
    color: #fff;
@@ -189,7 +189,7 @@ ul#nav li.current a { color: #e91a1a; }
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #0762f9; }
+#about a:hover, #about a:focus { color: #D72828; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -866,6 +866,7 @@ call-to-action .button {
 
 #contact .preferenceDiv label {
    width: 47%;
+   margin: 0;
 }
 
 #contact .preferenceDiv label#emailPreferenceLabel {
@@ -876,6 +877,7 @@ call-to-action .button {
 #contact input,
 #contact textarea,
 #contact select {
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    padding: 10px 20px;
 	color: #eee;
 	background: #373233;
@@ -884,13 +886,13 @@ call-to-action .button {
 	outline: none;
    font-size: 15px;
    line-height: 24px;
-   width: 85%;
+   width: 100%;
 }
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #0762f9;
+	background-color: #D72828;
 }
 #contact button.submit {
 	text-transform: uppercase;
@@ -902,7 +904,6 @@ call-to-action .button {
    height: auto;
    display: inline-block;
 	border-radius: 0px;
-   margin-left: 26%;
 }
 #contact button.submit:hover {
 	color: #0D0D0D;

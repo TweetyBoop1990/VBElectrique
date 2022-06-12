@@ -6,7 +6,7 @@ class About extends Component {
     if (!this.props.data) return null;
 
     const name = this.props.data.name;
-    const profilepic = "images/" + this.props.data.image;
+    const cmeqimage = process.env.PUBLIC_URL + this.props.data.cmeqimage;
     const bio = this.props.data.bio;
     const street = this.props.data.address.street;
     const city = this.props.data.address.city;
@@ -21,9 +21,9 @@ class About extends Component {
           <div className="row">
             <div className="three columns">
               <img
-                className="profile-pic"
-                src={profilepic}
-                alt="Nordic Giant Profile Pic"
+                className="about-images"
+                src={cmeqimage}
+                alt="CMEQ"
               />
             </div>
             <div className="nine columns main-col">
@@ -42,9 +42,9 @@ class About extends Component {
                       {city} {state}, {zip}
                     </span>
                     <br />
-                    <span>{phone}</span>
+                    <span><a href={`tel: ${phone}`}>{phone}</a></span>
                     <br />
-                    <span>{email}</span>
+                    <span><a href={`mailto: ${email}`}>{email}</a></span>
                   </p>
                 </div>
                 <div className="columns download">

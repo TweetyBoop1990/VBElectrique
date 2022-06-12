@@ -55,7 +55,7 @@ class Resume extends Component {
     });
 
     return (
-      <section id="resume">
+      <section id="resume" className="light">
         <Slide left duration={1300}>
           <div className="row education">
             <div className="three columns header-col">

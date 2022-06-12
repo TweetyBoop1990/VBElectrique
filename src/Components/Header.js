@@ -1,23 +1,17 @@
 import React from "react";
 import Fade from "react-reveal";
 import ReactPlayer from 'react-player';
-import heroVideo from './AdobeStock1.mov';
 import LangSelector from './LanguageSwitcher/LangSelector';
 import { useTranslation } from "react-i18next";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReceipt } from "@fortawesome/free-solid-svg-icons";
-import logo from './TransparentLogoLight.svg';
 
 function Header(props) {
   const { t } = useTranslation();
   if (!props.data) return null;
 
-  const project = props.data.project;
-
   return (
-    <header id="home">
+    <header id="home" className="dark">
       <ReactPlayer
-        url={heroVideo}
+        url={process.env.PUBLIC_URL + '/images/AdobeStock1.mov'}
         playing
         loop
         muted
@@ -46,11 +40,11 @@ function Header(props) {
             </a>
           </li>
 
-          {/* <li>
+          <li>
             <a className="smoothscroll" href="#about">
               {t("abouttitle")}
             </a>
-          </li> */}
+          </li>
 
           <li>
             <a className="smoothscroll" href="#resume">
@@ -73,25 +67,17 @@ function Header(props) {
         <div className="banner-text">
           <Fade bottom>
             <h1 className="responsive-headline" style={{display: 'none'}}>{t("name")}</h1>
-            <img src={logo} alt="Logo" style={{marginTop: '-45px'}}/>
+            <img src={process.env.PUBLIC_URL + '/images/TransparentLogoLight.svg'} alt="Logo" style={{marginTop: '-45px'}}/>
           </Fade>
           <Fade bottom duration={1200}>
-            <h3 style={{marginTop: '-80px'}}>{t("description")}</h3>
+            <h3>{t("description")}</h3>
             <h3>{t("mainregions")}</h3>
-          </Fade>
-          <hr />
-          <Fade bottom duration={2000}>
-            <ul className="social">
-              <a href={project} className="button btn project-btn">
-                <FontAwesomeIcon icon={faReceipt} /> { t("ctaButtonHeader").toUpperCase()}
-              </a>
-            </ul>
           </Fade>
         </div>
       </div>
 
       <p className="scrolldown">
-        <a className="smoothscroll" href="#about">
+        <a className="smoothscroll" href="#contact">
           <i className="icon-down-circle"></i>
         </a>
       </p>

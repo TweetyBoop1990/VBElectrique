@@ -4,7 +4,7 @@ import $ from "jquery";
 import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-// import About from "./Components/About";
+import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
@@ -56,7 +56,7 @@ class App extends Component {
         <Suspense fallback={<span>Loading...</span>}>
           <div className="App">
             <Header data={this.state.resumeData.main} />
-            {/* <About data={this.state.resumeData.main} /> */}
+            <About data={this.state.resumeData.main} />
             <Resume data={this.state.resumeData.resume} />
             <Portfolio data={this.state.resumeData.portfolio} />
             <Contact data={this.state.resumeData.main} />
