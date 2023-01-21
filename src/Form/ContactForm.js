@@ -14,95 +14,113 @@ const ContactForm = () => {
     const [contactPhone, setPhone] = useState('');
     const [contactEmail, setEmail] = useState('');
     const [contactMessage, setMessage] = useState('');
+    
+    const [validationMessage, setValidationMessage] = useState(false);
+    const ToggleClass = () => {
+        setValidationMessage(!validationMessage); 
+       };
 
     function submitRequest(e) {
         e.preventDefault();
-        $("#image-loader").fadeIn();
 
-        let templateFile = i18n.language.includes('en') ? 'template_cts85vh' : 'template_zv07g9i';
+        if (!form.current.contactName.value | !form.current.contactPhone.value | !form.current.contactEmail | !form.current.contactMessage) {
+            if ($('.validation-message').hasClass('hidden')) {
+                ToggleClass();
+            }
+        } else {
+            let templateFile = i18n.language.includes('en') ? 'template_cts85vh' : 'template_zv07g9i';
 
-        emailjs.sendForm('service_711dkza', templateFile, form.current, 'PugOh-WHgHuI81Dij')
-            .then((result) => {
-                $("#image-loader").fadeOut();
-                $("#message-warning").hide();
-                $("#contactForm").fadeOut();
-                $("#message-success").fadeIn();
-            }, (error) => {
-                alert("Message failed to send.")
-                $("#image-loader").fadeOut();
-                $("#message-warning").html(error.message);
-                $("#message-warning").fadeIn();
-            });
+            $("#image-loader").fadeIn();
+            emailjs.sendForm('service_711dkza', templateFile, form.current, 'PugOh-WHgHuI81Dij')
+                .then((result) => {
+                    $("#image-loader").fadeOut();
+                    $("#message-warning").hide();
+                    $("#contactForm").fadeOut();
+                    $("#message-success").fadeIn();
+                }, (error) => {
+                    alert("Message failed to send.")
+                    $("#image-loader").fadeOut();
+                    $("#message-warning").html(error.message);
+                    $("#message-warning").fadeIn();
+                });
+        }
     };
 
     return (
         <div>
-            <form ref={form} method="post" id="contactForm" name="contactForm" onSubmit={submitRequest} netlify>
+            <form ref={form} method="post" id="contactForm" name="contactForm" onSubmit={submitRequest} netlify="true">
                 <fieldset>
-                    <div className="six columns">
-                        <div>
-                            <label htmlFor="contactName">
-                                {t("contactName")} <span className="required">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                size="35"
-                                id="contactName"
-                                name="contactName"
-                                value={contactName}
-                                onChange={e => setName(e.target.value)}
-                            />
+                    <div className="row">
+                        <div className="six columns">
+                            <div>
+                                <label htmlFor="contactName">
+                                    {t("contactName")}
+                                </label>
+                                <input
+                                    type="text"
+                                    size="35"
+                                    id="contactName"
+                                    name="contactName"
+                                    value={contactName}
+                                    onChange={e => setName(e.target.value)}
+                                />
+                            </div>
+
+                            <div>
+                                <label htmlFor="contactPhone">
+                                    {t("contactPhoneNumber")}
+                                </label>
+                                <input
+                                    type="text"
+                                    size="35"
+                                    id="contactPhone"
+                                    name="contactPhone"
+                                    value={contactPhone}
+                                    onChange={e => setPhone(e.target.value)}
+                                />
+                            </div>
+
+                            <div>
+                                <label htmlFor="contactEmail">
+                                    {t("contactEmail")}
+                                </label>
+                                <input
+                                    type="text"
+                                    size="35"
+                                    id="contactEmail"
+                                    name="contactEmail"
+                                    value={contactEmail}
+                                    onChange={e => setEmail(e.target.value)}
+                                />
+                            </div>
                         </div>
 
-                        <div>
-                            <label htmlFor="contactPhone">
-                                {t("contactPhoneNumber")} <span className="required">*</span>
+                        <div className="six columns">
+                            <label htmlFor="contactMessage">
+                                {t("contactMessage")}
                             </label>
-                            <input
-                                type="text"
-                                size="35"
-                                id="contactPhone"
-                                name="contactPhone"
-                                value={contactPhone}
-                                onChange={e => setPhone(e.target.value)}
-                            />
-                        </div>
-
-                        <div>
-                            <label htmlFor="contactEmail">
-                                {t("contactEmail")} <span className="required">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                size="35"
-                                id="contactEmail"
-                                name="contactEmail"
-                                value={contactEmail}
-                                onChange={e => setEmail(e.target.value)}
-                            />
+                            <textarea
+                                cols="50"
+                                rows="3"
+                                id="contactMessage"
+                                name="contactMessage"
+                                value={contactMessage}
+                                onChange={e => setMessage(e.target.value)}
+                            ></textarea>
                         </div>
                     </div>
-
-                    <div className="six columns">
-                        <label htmlFor="contactMessage">
-                            {t("contactMessage")} <span className="required">*</span>
-                        </label>
-                        <textarea
-                            cols="50"
-                            rows="11"
-                            id="contactMessage"
-                            name="contactMessage"
-                            value={contactMessage}
-                            onChange={e => setMessage(e.target.value)}
-                        ></textarea>
-                    </div>
-                    <div className="two columns">
-                        <div>
-                            <button className="submit">{t("contactSubmit")}</button>
-                            <span id="image-loader">
-                                <img alt="" src="images/loader.gif" />
-                            </span>
+                    <div className="row">
+                        <div className="twelve columns">
+                            <div>
+                                <button className="submit">{t("contactSubmit")}</button>
+                                <span id="image-loader">
+                                    <img alt="" src="images/loader.gif" />
+                                </span>
+                            </div>
                         </div>
+                    </div>
+                    <div className={'validation-message text-center ' + (validationMessage ? "" : "hidden")}>
+                        {t("requiredFieldsMessage")}
                     </div>
                 </fieldset>
             </form>

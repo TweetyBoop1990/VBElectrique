@@ -19,33 +19,22 @@
     "social": [
       {
         "name": "facebook",
-        "url": "https://github.com/nordicgiant2/react-nice-resume",
+        "url": "https://www.facebook.com/vbelectrique",
         "className": "fa fa-facebook"
       },
       {
-        "name": "twitter",
-        "url": "http://twitter.com",
-        "className": "fa fa-twitter"
-      },
-      {
-        "name": "linkedin",
-        "url": "https://www.linkedin.com/in/tim-baker-8420009a/",
-        "className": "fa fa-linkedin"
-      },
-      {
-        "name": "instagram",
-        "url": "http://instagram.com/tbaker_x",
-        "className": "fa fa-instagram"
-      },
-      {
-        "name": "github",
-        "url": "https://github.com/nordicgiant2/react-nice-resume",
-        "className": "fa fa-github"
+        "name": "yelp",
+        "url": "https://www.facebook.com/vbelectrique",
+        "className": "fa fa-book"
       }
-    ]
+    ],
+    "developer": {
+      "email": "tweetyboopdev2022@gmail.com",
+      "subject": "New Website Design Inquiry from VB Electrique",
+      "body": "Please indicate your needs for a new website and/or design. Specify what type of technology, particular needs and features and timeframe."
+    }
   },
-  "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+  "services": {
     "education": [
       {
         "school": "University?",
@@ -76,32 +65,92 @@
     ],
     "skills": [
       {
-        "name": "Python",
-        "level": "60%"
+        "skill": 1,
+        "name": "Troubleshooting"
       },
       {
-        "name": "VueJs",
-        "level": "55%"
+        "skill": 2,
+        "name": "Repair and Code Corrections"
       },
       {
-        "name": "ReactJs",
-        "level": "50%"
+        "skill": 3,
+        "name": "Service Changes and Service Upgrades"
       },
       {
-        "name": "CSS",
-        "level": "90%"
+        "skill": 4,
+        "name": "Panel Changes and Panel Upgrades"
       },
       {
-        "name": "PHP",
-        "level": "80%"
+        "skill": 5,
+        "name": "Breaker Replacements"
       },
       {
-        "name": "Swift",
-        "level": "50%"
+        "skill": 6,
+        "name": "Grounding CSST Gas Lines"
       },
       {
-        "name": "JAVA",
-        "level": "80%"
+        "skill": 7,
+        "name": "Fire, Water and Storm Damage Repair"
+      },
+      {
+        "skill": 8,
+        "name": "Ceiling Fans and Paddle Fans"
+      },
+      {
+        "skill": 9,
+        "name": "Hot Tub Hook-Ups"
+      },
+      {
+        "skill": 10,
+        "name": "Appliance Circuits"
+      },
+      {
+        "skill": 11,
+        "name": "Portable Generator Installations"
+      },
+      {
+        "skill": 12,
+        "name": "Whole House Surge Protection"
+      },
+      {
+        "skill": 13,
+        "name": "Low Voltage Landscape Lighting"
+      },
+      {
+        "skill": 14,
+        "name": "LED Lighting"
+      },
+      {
+        "skill": 15,
+        "name": "Recessed Lighting"
+      },
+      {
+        "skill": 16,
+        "name": "Bathroom Fans and Heaters"
+      },
+      {
+        "skill": 17,
+        "name": "Doorbells"
+      },
+      {
+        "skill": 18,
+        "name": "Smoke Detectors"
+      },
+      {
+        "skill": 19,
+        "name": "Switches and Outlets"
+      },
+      {
+        "skill": 20,
+        "name": "Remodels and Alterations"
+      },
+      {
+        "skill": 21,
+        "name": "Rewire"
+      },
+      {
+        "skill": 22,
+        "name": "and more..."
       }
     ]
   },
@@ -110,74 +159,56 @@
       {
         "title": "Canadian Wanderlust",
         "category": "My Travel Blog for my post-university travels",
-        "image": "rbq-w.gif",
+        "image": "/images/portfolio/AdobeStock_209798673_Preview.jpeg",
         "url": "https://www.canadianwanderlust.com"
       },
       {
         "title": "Fury Fighting Gear",
         "category": "(offline now) A fighting gear company I started",
-        "image": "02.jpg",
+        "image": "/images/portfolio/AdobeStock_209798677_Preview.jpeg",
         "url": "http://www.timbakerdev.com"
       },
       {
         "title": "Original Thai Food",
         "category": "Website I built for a restaurant I like in Thailand",
-        "image": "03.jpg",
+        "image": "/images/portfolio/AdobeStock_221509453_Preview.jpeg",
         "url": "http://www.timbakerdev.com/originalthaifood.github.io"
       },
       {
         "title": "Resume Website",
         "category": "A React based resume website template",
-        "image": "04.jpg",
+        "image": "/images/portfolio/AdobeStock_249139121_Preview.jpeg",
         "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "05.jpg",
-        "url": "http://www.smirkspace.com"
-      },
-      {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "06.jpg",
-        "url": "https://www.canadianwanderlust.com"
-      },
-      {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "01.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "02.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "03.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
       },
       {
         "title": "Resume Website",
         "category": "A React based resume website template",
-        "image": "04.jpg",
+        "image": "/images/portfolio/AdobeStock_267547861_Preview.jpeg",
         "url": "http://www.timbakerdev.com"
       },
       {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "05.jpg",
-        "url": "http://www.smirkspace.com"
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "/images/portfolio/AdobeStock_277561696_Preview.jpeg",
+        "url": "http://www.timbakerdev.com"
       },
       {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "06.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "/images/portfolio/AdobeStock_339159855_Preview.jpeg",
+        "url": "http://www.timbakerdev.com"
+      },
+      {
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "/images/portfolio/AdobeStock_341129372_Preview.jpeg",
+        "url": "http://www.timbakerdev.com"
+      },
+      {
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "/images/portfolio/AdobeStock_529475651_Preview.jpeg",
+        "url": "http://www.timbakerdev.com"
       }
     ]
   }

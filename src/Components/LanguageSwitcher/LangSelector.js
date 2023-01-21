@@ -3,6 +3,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import MaterialUISwitch from './MaterialUiSwitchConfig';
 import i18n from '../../translations/i18n'
 import { Cookies } from 'react-cookie';
+import $ from 'jquery';
 
 const LangSelector = () => {
   const [isChecked, setChecked] = useState(
@@ -13,7 +14,13 @@ const LangSelector = () => {
 
   const changeLanguageHandler = (lang) =>
   {
-    i18n.changeLanguage(lang)
+    // i18n.changeLanguage(lang)
+    $('body').fadeToggle(200, "linear", function(){
+      i18n.changeLanguage(lang, function(e){
+        $('body').fadeToggle();
+      })
+    });
+    
     cookies.remove('siteLang')
     cookies.set('siteLang',lang)
   }

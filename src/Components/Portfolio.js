@@ -1,41 +1,36 @@
 import React, { Component } from "react";
-import Zmage from "react-zmage";
-import Fade from "react-reveal";
+import Masonry from 'react-masonry-css';
 
 let id = 0;
+const breakpointColumnsObj = {
+  default: 3,
+  1100: 3,
+  700: 2,
+  500: 1
+};
+
 class Portfolio extends Component {
   render() {
     if (!this.props.data) return null;
 
     const projects = this.props.data.projects.map(function (projects) {
-      let projectImage = "images/associations/" + projects.image;
+      let projectImage = projects.image;
 
       return (
-        <div key={id++} className="columns portfolio-item">
-          <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
-            <div style={{ textAlign: "center" }}>{projects.title}</div>
-          </div>
+        <div key={id++}>
+            <img alt={projects.title} src={projectImage} />
         </div>
       );
-    });
+    }).sort(() => Math.random() - 0.5);
 
     return (
       <section id="portfolio" className="light">
-        <Fade left duration={1000} distance="40px">
-          <div className="row">
-            <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
-
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
-                {projects}
-              </div>
-            </div>
-          </div>
-        </Fade>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column">
+          {projects}
+        </Masonry>
       </section>
     );
   }

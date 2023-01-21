@@ -1,20 +1,12 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
+import { withTranslation } from 'react-i18next';
 
-class Resume extends Component {
-  getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
-
+class Services extends Component {
   render() {
+    const { t } = this.props;
     if (!this.props.data) return null;
 
-    const skillmessage = this.props.data.skillmessage;
     const education = this.props.data.education.map(function (education) {
       return (
         <div key={education.school}>
@@ -42,31 +34,29 @@ class Resume extends Component {
     });
 
     const skills = this.props.data.skills.map((skills) => {
-      const backgroundColor = this.getRandomColor();
-      const className = "bar-expand " + skills.name.toLowerCase();
-      const width = skills.level;
-
       return (
-        <li key={skills.name}>
-          <span style={{ width, backgroundColor }} className={className}></span>
-          <em>{skills.name}</em>
+        <li className="three column" key={skills.skill}>
+          <span></span>
+          <em>{t("skill" + skills.skill)}</em>
         </li>
       );
     });
 
     return (
-      <section id="resume" className="light">
+      <section id="services" className="light">
         <Slide left duration={1300}>
           <div className="row education">
             <div className="three columns header-col">
               <h1>
-                <span>Education</span>
+                <span>{t("serviceTitle1")}</span>
               </h1>
             </div>
 
             <div className="nine columns main-col">
               <div className="row item">
-                <div className="twelve columns">{education}</div>
+                <div className="twelve columns">
+                  {t("conversion")}
+                </div>
               </div>
             </div>
           </div>
@@ -76,11 +66,13 @@ class Resume extends Component {
           <div className="row work">
             <div className="three columns header-col">
               <h1>
-                <span>Work</span>
+              <span>{t("serviceTitle2")}</span>
               </h1>
             </div>
 
-            <div className="nine columns main-col">{work}</div>
+            <div className="nine columns main-col">
+              {t("damageRepair")}
+            </div>
           </div>
         </Slide>
 
@@ -88,15 +80,17 @@ class Resume extends Component {
           <div className="row skill">
             <div className="three columns header-col">
               <h1>
-                <span>Skills</span>
+                <span>{t("skillsTitle")}</span>
               </h1>
             </div>
 
             <div className="nine columns main-col">
-              <p>{skillmessage}</p>
+              <p>{t("skillMessage")}</p>
+            </div>
 
+            <div className="twelve column">
               <div className="bars">
-                <ul className="skills">{skills}</ul>
+                <ul className="twelve column skills">{skills}</ul>
               </div>
             </div>
           </div>
@@ -106,4 +100,4 @@ class Resume extends Component {
   }
 }
 
-export default Resume;
+export default withTranslation()(Services);

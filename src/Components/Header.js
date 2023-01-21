@@ -3,10 +3,15 @@ import Fade from "react-reveal";
 import ReactPlayer from 'react-player';
 import LangSelector from './LanguageSwitcher/LangSelector';
 import { useTranslation } from "react-i18next";
+import $ from 'jquery';
 
 function Header(props) {
   const { t } = useTranslation();
   if (!props.data) return null;
+
+  function triggerPopup() {
+    $('.bulb-light').trigger('click');
+  }
 
   return (
     <header id="home" className="dark">
@@ -47,13 +52,13 @@ function Header(props) {
           </li>
 
           <li>
-            <a className="smoothscroll" href="#resume">
+            <a className="smoothscroll" href="#services">
               {t("servicestitle")}
             </a>
           </li>
 
           <li>
-            <a className="smoothscroll" href="#contact">
+            <a id="popupTrigger" onClick={triggerPopup}>
               {t("contactustitle")}
             </a>
           </li>

@@ -5,6 +5,7 @@ class Footer extends Component {
   render() {
     if (!this.props.data) return null;
 
+    const developer = this.props.data.developer;
     const networks = this.props.data.social.map(function (network) {
       return (
         <li key={network.name}>
@@ -26,9 +27,7 @@ class Footer extends Component {
                 <li>&copy; Copyright {new Date().getFullYear()} VB Électrique</li>
                 <li>
                   Design by{" "}
-                  <a title="Styleshout" href="http://www.styleshout.com/">
-                    TweetyBoopDev
-                  </a>
+                  <a href={"mailto:"+developer.email+"?subject="+developer.subject+"&body="+developer.body}>TweetyBoopDev</a>
                 </li>
               </ul>
             </div>
