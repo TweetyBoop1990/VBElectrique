@@ -708,7 +708,7 @@ ul#nav li.current a {
 
 .bars li {
    position: relative;
-   margin-bottom: 35px;
+   margin-bottom: 50px;
    /* background: #333; */
    height: 42px;
    border-radius: 0px;
@@ -1314,28 +1314,28 @@ call-to-action .button {
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
-#contact {
+.contact {
    background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
    color: #b9b5b5;
 }
 
-#contact .section-head {
+.contact .section-head {
    margin-bottom: 42px;
 }
 
-#contact a,
-#contact a:visited {
+.contact a,
+.contact a:visited {
    color: #0762f9;
 }
 
-#contact a:hover,
-#contact a:focus {
+.contact a:hover,
+.contact a:focus {
    color: #fff;
 }
 
-#contact h1 {
+.contact h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
@@ -1343,11 +1343,11 @@ call-to-action .button {
    margin-bottom: 6px;
 }
 
-#contact h1 span {
+.contact h1 span {
    display: none;
 }
 
-#contact h1:before {
+.contact h1:before {
    font-family: 'FontAwesome';
    content: "\f0e0";
    padding-right: 10px;
@@ -1358,28 +1358,28 @@ call-to-action .button {
    color: #ebeeee;
 }
 
-#contact h4 {
+.contact h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
    color: #EBEEEE;
    margin-bottom: 6px;
 }
 
-#contact p.lead {
+.contact p.lead {
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
 }
 
-#contact .header-col {
+.contact .header-col {
    padding-top: 6px;
 }
 
 
 /* contact form */
-#contact form {
+.contact form {
    margin-bottom: 30px;
 }
 
-#contact label {
+.contact label {
    font: 15px/24px 'opensans-bold', sans-serif;
    margin: 12px 0;
    color: #EBEEEE;
@@ -1387,17 +1387,17 @@ call-to-action .button {
    width: 60%;
 }
 
-#contact label.button.preference {
+.contact label.button.preference {
    text-align: center;
    background: #373233;
 }
 
-#contact label.button.preference.active {
+.contact label.button.preference.active {
    text-align: center;
    background: #9f1223;
 }
 
-#contact .preferenceDiv {
+.contact .preferenceDiv {
    background: none !important;
    display: inline-block;
    align-items: baseline;
@@ -1411,19 +1411,19 @@ call-to-action .button {
    width: 88%;
 }
 
-#contact .preferenceDiv label {
+.contact .preferenceDiv label {
    width: 47%;
    margin: 0;
 }
 
-#contact .preferenceDiv label#emailPreferenceLabel {
+.contact .preferenceDiv label#emailPreferenceLabel {
    margin-left: 10px;
    width: 47%;
 }
 
-#contact input,
-#contact textarea,
-#contact select {
+.contact input,
+.contact textarea,
+.contact select {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    padding: 10px 20px;
    color: #eee;
@@ -1436,14 +1436,14 @@ call-to-action .button {
    width: 100%;
 }
 
-#contact input:focus,
-#contact textarea:focus,
-#contact select:focus {
+.contact input:focus,
+.contact textarea:focus,
+.contact select:focus {
    color: #fff;
    background-color: #D72828;
 }
 
-#contact button.submit {
+.contact button.submit {
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
@@ -1455,28 +1455,34 @@ call-to-action .button {
    border-radius: 0px;
 }
 
-#contact button.submit:hover {
+.contact button.submit:hover {
    color: #0D0D0D;
    background: #fff;
 }
 
-#contact span.required {
+.contact span.required {
    color: #0762f9;
    font-size: 13px;
 }
 
 #message-warning,
-#message-success {
+#message-success,
+#message-duplicatewarning {
    display: none;
-   background: #0F0F0F;
+
    padding: 24px 24px;
    margin-bottom: 36px;
-   width: 65%;
-   margin-left: 26%;
+   width: 85%;
+   margin-left: 7.5%;
+}
+
+#message-duplicatewarning {
+   color: #D72828;
 }
 
 #message-warning {
    color: #D72828;
+   background: #0F0F0F;
 }
 
 #message-success {
@@ -1484,7 +1490,8 @@ call-to-action .button {
 }
 
 #message-warning i,
-#message-success i {
+#message-success i,
+#message-duplicatewarning i {
    margin-right: 10px;
 }
 

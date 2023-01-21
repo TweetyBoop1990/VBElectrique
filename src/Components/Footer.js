@@ -24,10 +24,23 @@ class Footer extends Component {
               <ul className="social-links">{networks}</ul>
 
               <ul className="copyright">
-                <li>&copy; Copyright {new Date().getFullYear()} VB Électrique</li>
+                <li>
+                  &copy; Copyright {new Date().getFullYear()} VB Électrique
+                </li>
                 <li>
                   Design by{" "}
-                  <a href={"mailto:"+developer.email+"?subject="+developer.subject+"&body="+developer.body}>TweetyBoopDev</a>
+                  <a
+                    href={
+                      "mailto:" +
+                      developer.email +
+                      "?subject=" +
+                      developer.subject +
+                      "&body=" +
+                      developer.body
+                    }
+                  >
+                    TweetyBoopDev
+                  </a>
                 </li>
               </ul>
             </div>

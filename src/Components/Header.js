@@ -1,22 +1,22 @@
 import React from "react";
 import Fade from "react-reveal";
-import ReactPlayer from 'react-player';
-import LangSelector from './LanguageSwitcher/LangSelector';
+import ReactPlayer from "react-player";
+import LangSelector from "./LanguageSwitcher/LangSelector";
 import { useTranslation } from "react-i18next";
-import $ from 'jquery';
+import $ from "jquery";
 
 function Header(props) {
   const { t } = useTranslation();
   if (!props.data) return null;
 
   function triggerPopup() {
-    $('.bulb-light').trigger('click');
+    $(".bulb-light").trigger("click");
   }
 
   return (
     <header id="home" className="dark">
       <ReactPlayer
-        url={process.env.PUBLIC_URL + '/images/AdobeStock1.mov'}
+        url={process.env.PUBLIC_URL + "/images/videoblocks-electrician-is-checking-electrical-voltage-inside-electric-panel-by-multimeter-worker-repairing-and-maintaining-industrial-equipment-on-plant_rrbzd6htd__b0fe3e140e8677a8b17d6e23cc00049e__P360.mp4"}
         playing
         loop
         muted
@@ -27,8 +27,8 @@ function Header(props) {
           width: "100%",
           left: 0,
           top: 0,
-          transform: "scaleX(1.4) scaleY(1.4)",
-          opacity: "30%"
+          transform: "scaleX(1) scaleY(1)",
+          opacity: "30%",
         }}
       />
       <nav id="nav-wrap">
@@ -46,22 +46,24 @@ function Header(props) {
           </li>
 
           <li>
-            <a className="smoothscroll" href="#about">
-              {t("abouttitle")}
-            </a>
-          </li>
-
-          <li>
             <a className="smoothscroll" href="#services">
               {t("servicestitle")}
             </a>
           </li>
 
           <li>
-            <a id="popupTrigger" onClick={triggerPopup}>
+            <a id="popupTrigger" href="#popupTrigger" onClick={triggerPopup}>
               {t("contactustitle")}
             </a>
           </li>
+
+          <li>
+            <a className="smoothscroll" href="#about">
+              {t("abouttitle")}
+            </a>
+          </li>
+
+
           <li className="">
             <LangSelector />
           </li>
@@ -71,8 +73,14 @@ function Header(props) {
       <div className="row banner">
         <div className="banner-text">
           <Fade bottom>
-            <h1 className="responsive-headline" style={{display: 'none'}}>{t("name")}</h1>
-            <img src={process.env.PUBLIC_URL + '/images/TransparentLogoLight.svg'} alt="Logo" style={{marginTop: '-45px'}}/>
+            <h1 className="responsive-headline" style={{ display: "none" }}>
+              {t("name")}
+            </h1>
+            <img
+              src={process.env.PUBLIC_URL + "/images/TransparentLogoLight.svg"}
+              alt="Logo"
+              style={{ marginTop: "-45px" }}
+            />
           </Fade>
           <Fade bottom duration={1200}>
             <h3>{t("description")}</h3>

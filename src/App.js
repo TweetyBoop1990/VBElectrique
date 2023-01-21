@@ -8,13 +8,13 @@ import About from "./Components/About";
 import Services from "./Components/Services";
 import Portfolio from "./Components/Portfolio";
 import Contact from "./Components/Contact";
-import { instanceOf } from 'prop-types';
-import { withCookies, Cookies, CookiesProvider } from 'react-cookie';
+import { instanceOf } from "prop-types";
+import { withCookies, Cookies, CookiesProvider } from "react-cookie";
 import Lightbulb from "./Components/Lightbulb";
 
 class App extends Component {
   static propTypes = {
-    cookies: instanceOf(Cookies).isRequired
+    cookies: instanceOf(Cookies).isRequired,
   };
 
   constructor(props) {
@@ -23,10 +23,10 @@ class App extends Component {
     this.state = {
       resumeData: {
         en: {},
-        fr: {}
+        fr: {},
       },
-      siteLang: cookies.get('siteLang') || navigator.language,
-      showPopup: false
+      siteLang: cookies.get("siteLang") || navigator.language,
+      showPopup: false,
     };
 
     ReactGA.initialize("UA-110570651-1");
@@ -35,7 +35,7 @@ class App extends Component {
 
   togglePopup() {
     this.setState({
-      showPopup: !this.state.showPopup
+      showPopup: !this.state.showPopup,
     });
   }
 
@@ -50,7 +50,7 @@ class App extends Component {
       error: function (xhr, status, err) {
         console.log(err);
         alert(err);
-      }
+      },
     });
   }
 
@@ -64,15 +64,15 @@ class App extends Component {
         <Suspense fallback={<span>Loading...</span>}>
           <div className="App">
             <Header data={this.state.resumeData.main} />
-            <About data={this.state.resumeData.main} />
             <Services data={this.state.resumeData.services} />
             <Portfolio data={this.state.resumeData.portfolio} />
             <Contact data={this.state.resumeData.main} />
+            <About data={this.state.resumeData.main} />
             <Footer data={this.state.resumeData.main} />
             <Lightbulb />
           </div>
         </Suspense>
-      </CookiesProvider >
+      </CookiesProvider>
     );
   }
 }

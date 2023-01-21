@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
-import { withTranslation } from 'react-i18next';
+import { withTranslation } from "react-i18next";
 
 class Services extends Component {
   render() {
@@ -54,9 +54,7 @@ class Services extends Component {
 
             <div className="nine columns main-col">
               <div className="row item">
-                <div className="twelve columns">
-                  {t("conversion")}
-                </div>
+                <div className="twelve columns">{t("conversion")}</div>
               </div>
             </div>
           </div>
@@ -66,13 +64,11 @@ class Services extends Component {
           <div className="row work">
             <div className="three columns header-col">
               <h1>
-              <span>{t("serviceTitle2")}</span>
+                <span>{t("serviceTitle2")}</span>
               </h1>
             </div>
 
-            <div className="nine columns main-col">
-              {t("damageRepair")}
-            </div>
+            <div className="nine columns main-col">{t("damageRepair")}</div>
           </div>
         </Slide>
 
@@ -82,10 +78,6 @@ class Services extends Component {
               <h1>
                 <span>{t("skillsTitle")}</span>
               </h1>
-            </div>
-
-            <div className="nine columns main-col">
-              <p>{t("skillMessage")}</p>
             </div>
 
             <div className="twelve column">

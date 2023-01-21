@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Fade, Slide } from "react-reveal";
-import ContactForm from '../Form/ContactForm';
+import ContactForm from "../Form/ContactForm";
 import { withTranslation } from "react-i18next";
 
 class Contact extends Component {
@@ -11,17 +11,11 @@ class Contact extends Component {
     const message = this.props.data.contactmessage;
 
     return (
-      <section id="contact" className="">
+      <section id="popupTrigger" className="contact">
         <Fade bottom duration={1000}>
           <div className="row section-head">
-            <div className="two columns header-col">
-              <h1>
-                <span>Get In Touch.</span>
-              </h1>
-            </div>
-
-            <div className="ten columns">
-              <p className="lead">{message}</p>
+            <div className="twelve columns header-col">
+              <p className="lead">{t("contactUsTitle")}</p>
             </div>
           </div>
         </Fade>
