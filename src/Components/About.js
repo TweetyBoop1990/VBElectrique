@@ -9,7 +9,6 @@ class About extends Component {
 
     const name = this.props.data.name;
     const cmeqimage = process.env.PUBLIC_URL + this.props.data.cmeqimage;
-    const bio = this.props.data.bio;
     const city = this.props.data.address.city;
     const state = this.props.data.address.state;
     const phone = this.props.data.phone;
@@ -23,9 +22,6 @@ class About extends Component {
               <img className="about-images" src={cmeqimage} alt="CMEQ" />
             </div>
             <div className="nine columns main-col">
-              {/* <h2>{t("aboutUsTitle")}</h2>
-
-              <p>{t('aboutBio')}</p> */}
               <div className="row">
                 <div className="columns contact-details">
                   <h2>{t("contactdetailstitle")}</h2>

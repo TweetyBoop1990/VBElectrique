@@ -8,8 +8,6 @@ class Contact extends Component {
     const { t } = this.props;
     if (!this.props.data) return null;
 
-    const message = this.props.data.contactmessage;
-
     return (
       <section id="popupTrigger" className="contact">
         <Fade bottom duration={1000}>
