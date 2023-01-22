@@ -64,10 +64,13 @@ function Header(props) {
           </li>
 
 
-          <li className="">
+          <li className="langSelectorDesktop">
             <LangSelector />
           </li>
         </ul>
+        <li className="langSelectorMobile">
+          <LangSelector />
+        </li>
       </nav>
 
       <div className="row banner">

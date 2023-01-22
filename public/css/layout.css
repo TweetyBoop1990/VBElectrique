@@ -1668,6 +1668,13 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
    background: #9f1223;
 }
 
+.langSelectorDesktop {
+   display: inline-block !important;
+}
+.langSelectorMobile {
+   display: none !important;
+}
+
 #nav-wrap > a {
    background-color: #9f1223 !important;
 }
