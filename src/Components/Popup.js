@@ -9,7 +9,11 @@ class Popup extends Component {
       <div className="popup">
         <div className="popup_open">
           <div className="row">
-            <div className="column header-text">{t("contactUsTitle")}</div>
+            <div className="column header-text">
+              <div className="header-text-item">
+                {t("contactUsTitle")}
+              </div>
+            </div>
             <button
               className="column close-popup-x"
               onClick={this.props.closePopup}

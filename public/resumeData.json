@@ -1,7 +1,7 @@
 {
   "main": {
     "image": "profilepic.jpg",
-    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "contactmessage": "",
     "email": "info@vbelectrique.com",
     "phone": "514-662-4693",
     "cmeqimage": "/images/associations/CMEQ.png",
@@ -34,34 +34,8 @@
     }
   },
   "services": {
-    "education": [
-      {
-        "school": "University?",
-        "degree": "Masters in Beer tasting",
-        "graduated": "April 2017",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
-      {
-        "school": "School #1 Maybe College?",
-        "degree": "What did you study 101",
-        "graduated": "March 2013",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      }
-    ],
-    "work": [
-      {
-        "company": "Awesome Design Studio",
-        "title": "Senior UX God ",
-        "years": "March 2018 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      },
-      {
-        "company": "Super Cool Studio",
-        "title": "Junior bug fixer",
-        "years": "March 2017 - February 2018",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      }
-    ],
+    "education": [],
+    "work": [],
     "skills": [
       {
         "skill": 1,

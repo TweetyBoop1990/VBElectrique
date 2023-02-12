@@ -20,6 +20,7 @@ function Header(props) {
         playing
         loop
         muted
+        playsinline
         width="100%"
         height="100%"
         style={{
@@ -82,12 +83,12 @@ function Header(props) {
             <img
               src={process.env.PUBLIC_URL + "/images/TransparentLogoLight.svg"}
               alt="Logo"
-              style={{ marginTop: "-45px" }}
+              style={{ marginTop: "-45px", marginLeft: "-18px" }}
             />
           </Fade>
           <Fade bottom duration={1200}>
             <h3>{t("description")}</h3>
-            <h3>{t("mainregions")}</h3>
+            <h3 className="regions">{t("mainregions")}</h3>
           </Fade>
         </div>
       </div>

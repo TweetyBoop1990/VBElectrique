@@ -106,7 +106,7 @@ body {
 
 .bulb-light {
    position: absolute;
-   right: -56px;
+   right: -52px;
    border: 0;
    background: transparent;
    margin: 0 auto !important;
@@ -675,7 +675,7 @@ ul#nav li.current a {
 }
 
 #services .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
+   font: 16px/24px 'opensans-regular', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
@@ -1166,7 +1166,7 @@ call-to-action .button {
 }
 
 #testimonials blockquote p {
-   font-family: 'librebaskerville-italic', serif;
+   font-family: 'opensans-regular', serif;
    padding: 0;
    font-size: 24px;
    line-height: 48px;
@@ -1689,19 +1689,35 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
    display: none;
 }
 
+.regions {
+   padding-top: 15px;
+}
+
 /* Mobile Devices */
 @media (max-width: 480px) {
    .bulb-container {
       transform: scale(0.8, 0.8);
    }
 
-   .row .six {
-      width: 59% !important;
+   .popup .row .six {
+      width: 59% !important; 
       padding-left: 21px;
    }
 
+   .popup_open .header-text {
+      margin-top: 10px;
+      margin-left: -9px;
+      font-size: medium;
+      height: 61px;
+      display: table;
+   }
+   .popup_open .header-text .header-text-item {
+      display: table-cell;
+      vertical-align: middle;
+   }
+
    input[type="text"], input[type="password"], input[type="email"], textarea, select {
-      height: 15px;
+      height: 35px;
       margin-bottom: 15px;
    }
 }
