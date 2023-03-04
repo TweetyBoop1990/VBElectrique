@@ -75,6 +75,10 @@ audio:not([controls]) {
    height: 0;
 }
 
+.hidden {
+   display: none;
+}
+
 [hidden] { display: none; }
 
 code, kbd, pre, samp {

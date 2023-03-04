@@ -55,4 +55,5 @@ export const TRANSLATIONS_EN = {
   skill20: "Remodels and Alterations",
   skill21: "Rewire",
   skill22: "and more...",
+  copyright: "Copyright"
 };

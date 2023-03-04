@@ -56,4 +56,5 @@ export const TRANSLATIONS_FR = {
   skill20: "Modifications et remodelage",
   skill21: "Changement de fil",
   skill22: "et plus...",
+  copyright: "Droits d'auteur",
 };

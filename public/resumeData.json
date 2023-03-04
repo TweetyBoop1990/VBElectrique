@@ -20,16 +20,11 @@
         "name": "facebook",
         "url": "https://www.facebook.com/vbelectrique",
         "className": "fa fa-facebook"
-      },
-      {
-        "name": "yelp",
-        "url": "https://www.facebook.com/vbelectrique",
-        "className": "fa fa-book"
       }
     ],
     "developer": {
       "email": "tweetyboopdev2022@gmail.com",
-      "subject": "New Website Design Inquiry from VB Electrique",
+      "subject": "New Website Design Inquiry from VB Electrique Inc.",
       "body": "Please indicate your needs for a new website and/or design. Specify what type of technology, particular needs and features and timeframe."
     }
   },

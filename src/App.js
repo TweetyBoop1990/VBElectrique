@@ -60,19 +60,19 @@ class App extends Component {
 
   render() {
     return (
-      <CookiesProvider>
-        <Suspense fallback={<span>Loading...</span>}>
-          <div className="App">
-            <Header data={this.state.resumeData.main} />
-            <Services data={this.state.resumeData.services} />
-            <Portfolio data={this.state.resumeData.portfolio} />
-            <Contact data={this.state.resumeData.main} />
-            <About data={this.state.resumeData.main} />
-            <Footer data={this.state.resumeData.main} />
-            <Lightbulb />
-          </div>
-        </Suspense>
-      </CookiesProvider>
+        <CookiesProvider>
+          <Suspense fallback={<span>Loading...</span>}>
+            <div className="App">
+              <Header data={this.state.resumeData.main} />
+              <Services data={this.state.resumeData.services} />
+              <Portfolio data={this.state.resumeData.portfolio} />
+              <Contact data={this.state.resumeData.main} />
+              <About data={this.state.resumeData.main} />
+              <Footer data={this.state.resumeData.main} />
+              <Lightbulb />
+            </div>
+          </Suspense>
+        </CookiesProvider>
     );
   }
 }

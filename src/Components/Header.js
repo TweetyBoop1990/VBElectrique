@@ -1,6 +1,6 @@
 import React from "react";
 import Fade from "react-reveal";
-import ReactPlayer from "react-player";
+import VideoPlayer from "react-background-video-player";
 import LangSelector from "./LanguageSwitcher/LangSelector";
 import { useTranslation } from "react-i18next";
 import $ from "jquery";
@@ -15,21 +15,14 @@ function Header(props) {
 
   return (
     <header id="home" className="dark">
-      <ReactPlayer
-        url={process.env.PUBLIC_URL + "/images/videoblocks-electrician-is-checking-electrical-voltage-inside-electric-panel-by-multimeter-worker-repairing-and-maintaining-industrial-equipment-on-plant_rrbzd6htd__b0fe3e140e8677a8b17d6e23cc00049e__P360.mp4"}
-        playing
-        loop
-        muted
-        playsinline
-        width="100%"
-        height="100%"
+      <VideoPlayer
+        className="video"
+        src={process.env.PUBLIC_URL + "/images/videoblocks-electrician-is-checking-electrical-voltage-inside-electric-panel-by-multimeter-worker-repairing-and-maintaining-industrial-equipment-on-plant_rrbzd6htd__b0fe3e140e8677a8b17d6e23cc00049e__P360.mp4"}
+        autoPlay={true}
+        muted={true}
+        loop={true}
         style={{
-          position: "absolute",
-          width: "100%",
-          left: 0,
-          top: 0,
-          transform: "scaleX(1) scaleY(1)",
-          opacity: "30%",
+          opacity: "30%"
         }}
       />
       <nav id="nav-wrap">

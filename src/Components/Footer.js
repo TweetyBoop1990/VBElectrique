@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
+import { withTranslation } from "react-i18next";
 
 class Footer extends Component {
   render() {
     if (!this.props.data) return null;
-
+    const { t } = this.props;
     const developer = this.props.data.developer;
     const networks = this.props.data.social.map(function (network) {
       return (
@@ -25,7 +26,7 @@ class Footer extends Component {
 
               <ul className="copyright">
                 <li>
-                  &copy; Copyright {new Date().getFullYear()} VB Électrique
+                  &copy; {t('copyright')} {new Date().getFullYear()} VB Électrique Inc.
                 </li>
                 <li>
                   Design by{" "}
@@ -57,4 +58,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+export default withTranslation()(Footer);
